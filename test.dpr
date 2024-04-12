@@ -174,9 +174,17 @@ begin
   Assert(T = nil);
 end;
 
+procedure TestNormalize;
+begin
+  Assert(CleanupString('アンゴラ') <> CleanupString('アンギラ'));
+end;
+
 begin
   try
     SetConsoleOutputCP(CP_UTF8);
+    TestNormalize;
+//    for var C in TCountries.Countries do
+//      DumpCountry(C);
     TestBasic;
     TestFrance;
     TestEuropeRegion;

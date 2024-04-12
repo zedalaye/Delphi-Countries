@@ -7,6 +7,7 @@
 interface
 
 uses
+  Winapi.Windows,
   System.SysUtils,
   System.Character,
   System.Generics.Collections;
@@ -184,9 +185,70 @@ type
     class function Locales: TArray<string>; static;
     class function Translations(const Locale: string = ''): TCountryTranslations; static;
     class property DefaultLocale: string read FDefaultLocale write FDefaultLocale;
+
+    class property Countries: TCountryList read FCountries;
   end;
 
+function CleanupString(const S: string): string;
+
 implementation
+
+{ Removes punctuation, symbols, whitespaces and accents (non spacing marks) and
+  converts uppercased letters to lowercase }
+function CleanupString(const S: string): string;
+const
+  DESIRABLE_UNICODE_CATEGORIES = [
+//    TUnicodeCategory.ucControl,
+//    TUnicodeCategory.ucFormat,
+//    TUnicodeCategory.ucUnassigned,
+//    TUnicodeCategory.ucPrivateUse,
+//    TUnicodeCategory.ucSurrogate,
+    TUnicodeCategory.ucLowercaseLetter,
+    TUnicodeCategory.ucModifierLetter,
+    TUnicodeCategory.ucOtherLetter,
+    TUnicodeCategory.ucTitlecaseLetter,
+    TUnicodeCategory.ucUppercaseLetter,
+//    TUnicodeCategory.ucCombiningMark,
+//    TUnicodeCategory.ucEnclosingMark,
+//    TUnicodeCategory.ucNonSpacingMark,
+    TUnicodeCategory.ucDecimalNumber,
+    TUnicodeCategory.ucLetterNumber,
+    TUnicodeCategory.ucOtherNumber
+//    TUnicodeCategory.ucConnectPunctuation,
+//    TUnicodeCategory.ucDashPunctuation,
+//    TUnicodeCategory.ucClosePunctuation,
+//    TUnicodeCategory.ucFinalPunctuation,
+//    TUnicodeCategory.ucInitialPunctuation,
+//    TUnicodeCategory.ucOtherPunctuation,
+//    TUnicodeCategory.ucOpenPunctuation,
+//    TUnicodeCategory.ucCurrencySymbol,
+//    TUnicodeCategory.ucModifierSymbol,
+//    TUnicodeCategory.ucMathSymbol,
+//    TUnicodeCategory.ucOtherSymbol,
+//    TUnicodeCategory.ucLineSeparator,
+//    TUnicodeCategory.ucParagraphSeparator,
+//    TUnicodeCategory.ucSpaceSeparator
+  ];
+var
+  L: Integer;
+  Tmp: string;
+begin
+  L := NormalizeString(NormalizationD, PChar(S), Length(S), nil, 0);
+  SetLength(Tmp, L);
+
+  L := NormalizeString(NormalizationD, PChar(S), Length(S), PChar(Tmp), Length(Tmp));
+  SetLength(Tmp, L);
+
+  Result := '';
+  for var C in Tmp do
+  begin
+    if C.GetUnicodeCategory in DESIRABLE_UNICODE_CATEGORIES then
+      if C.IsUpper then
+        Result := Result + C.ToLower
+      else
+        Result := Result + C;
+  end;
+end;
 
 { TCountries }
 
@@ -204,7 +266,7 @@ end;
 class function TCountries.FindBy(NameIndex: TCountryName;
   const Name: string): TCountry;
 begin
-  if not GetNameCache(NameIndex).TryGetValue(LowerCase(Name), Result) then
+  if not GetNameCache(NameIndex).TryGetValue(CleanupString(Name), Result) then
     Result := nil;
 end;
 
@@ -239,7 +301,7 @@ class function TCountries.AllBy(RegionIndex: TCountryRegion;
 var
   L: TCountryList;
 begin
-  if not GetRegionCache(RegionIndex).TryGetValue(LowerCase(Region), L) then
+  if not GetRegionCache(RegionIndex).TryGetValue(CleanupString(Region), L) then
     SetLength(Result, 0)
   else
     Result := L.ToArray;
@@ -300,56 +362,6 @@ end;
 
 { Internal Plumbery }
 
-class constructor TCountries.ClassCreate;
-
-  procedure RegisterCountry(const Country: TCountry);
-  begin
-    FCountries.Add(Country);
-  end;
-
-  procedure RegisterTranslation(const Language, Alpha2, Value: string);
-  var
-    D: TDictionary<string, string>;
-  begin
-    if not FTranslations.TryGetValue(Language, D) then
-    begin
-      D := TCountryTranslations.Create;
-      FTranslations.Add(Language, D);
-    end;
-    D.AddOrSetValue(Alpha2, Value);
-  end;
-
-begin
-  FCountries := TCountryList.Create(True);
-  FTranslations := TObjectDictionary<string, TCountryTranslations>.Create([doOwnsValues]);
-
-  { Caches }
-  for var CN := Low(TCountryName) to High(TCountryName) do
-    FNamesCache[CN] := nil;
-  for var CR := Low(TCountryRegion) to High(TCountryRegion) do
-    FRegionsCache[CR] := nil;
-
-  { Register Countries }
-  {$include Countries.Data.inc}
-
-  { Register Translations }
-  {$include Countries.Translations.inc}
-end;
-
-class destructor TCountries.ClassDestroy;
-begin
-  for var CR := Low(TCountryRegion) to High(TCountryRegion) do
-    if FRegionsCache[CR] <> nil then
-      FRegionsCache[CR].Free;
-
-  for var CN := Low(TCountryName) to High(TCountryName) do
-    if FNamesCache[CN] <> nil then
-      FNamesCache[CN].Free;
-
-  FTranslations.Free;
-  FCountries.Free;
-end;
-
 class function TCountries.GetNameCache(Cache: TCountryName): TNameCache;
 begin
   Result := FNamesCache[Cache];
@@ -398,25 +410,25 @@ begin
         RegisterName(Result, C.Alpha3, C);
 
       cnCommonName:
-        RegisterName(Result, LowerCase(C.CommonName), C);
+        RegisterName(Result, CleanupString(C.CommonName), C);
 
       cnShortName:
-        RegisterName(Result, LowerCase(C.ISOShortName), C);
+        RegisterName(Result, CleanupString(C.ISOShortName), C);
 
       cnLongName:
-        RegisterName(Result, LowerCase(C.ISOLongName), C);
+        RegisterName(Result, CleanupString(C.ISOLongName), C);
 
       cnUnofficialName:
         for var UN in C.UnofficialNames do
-          RegisterName(Result, LowerCase(UN), C);
+          RegisterName(Result, CleanupString(UN), C);
 
       cnAnyName:
       begin
-        RegisterName(Result, LowerCase(C.CommonName), C);
-        RegisterName(Result, LowerCase(C.ISOShortName), C);
-        RegisterName(Result, LowerCase(C.ISOLongName), C);
+        RegisterName(Result, CleanupString(C.CommonName), C);
+        RegisterName(Result, CleanupString(C.ISOShortName), C);
+        RegisterName(Result, CleanupString(C.ISOLongName), C);
         for var UN in C.UnofficialNames do
-          RegisterName(Result, LowerCase(UN), C);
+          RegisterName(Result, CleanupString(UN), C);
       end;
     end;
   end;
@@ -440,10 +452,10 @@ begin
     end;
 
     var L: TCountryList;
-    if not Result.TryGetValue(LowerCase(R), L) then
+    if not Result.TryGetValue(CleanupString(R), L) then
     begin
       L := TCountryList.Create(False);
-      Result.Add(LowerCase(R), L);
+      Result.Add(CleanupString(R), L);
     end;
     L.Add(C);
   end;
@@ -484,6 +496,56 @@ begin
   Result := '';
   if FPostalCode then
     Result := Format('\A%s\Z', [FPostalCodeFormat]);
+end;
+
+class destructor TCountries.ClassDestroy;
+begin
+  for var CR := Low(TCountryRegion) to High(TCountryRegion) do
+    if FRegionsCache[CR] <> nil then
+      FRegionsCache[CR].Free;
+
+  for var CN := Low(TCountryName) to High(TCountryName) do
+    if FNamesCache[CN] <> nil then
+      FNamesCache[CN].Free;
+
+  FTranslations.Free;
+  FCountries.Free;
+end;
+
+class constructor TCountries.ClassCreate;
+
+  procedure RegisterCountry(const Country: TCountry);
+  begin
+    FCountries.Add(Country);
+  end;
+
+  procedure RegisterTranslation(const Language, Alpha2, Value: string);
+  var
+    D: TDictionary<string, string>;
+  begin
+    if not FTranslations.TryGetValue(Language, D) then
+    begin
+      D := TCountryTranslations.Create;
+      FTranslations.Add(Language, D);
+    end;
+    D.AddOrSetValue(Alpha2, Value);
+  end;
+
+begin
+  FCountries := TCountryList.Create(True);
+  FTranslations := TObjectDictionary<string, TCountryTranslations>.Create([doOwnsValues]);
+
+  { Caches }
+  for var CN := Low(TCountryName) to High(TCountryName) do
+    FNamesCache[CN] := nil;
+  for var CR := Low(TCountryRegion) to High(TCountryRegion) do
+    FRegionsCache[CR] := nil;
+
+  { Register Countries }
+  {$include Countries.Data.inc}
+
+  { Register Translations }
+  {$include Countries.Translations.inc}
 end;
 
 end.
