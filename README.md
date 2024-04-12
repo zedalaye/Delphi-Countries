@@ -2,7 +2,7 @@
 
 Countries is a Delphi port of the [Countries RubyGem](https://github.com/countries/countries) which is a collection of all sorts of useful information for every country in the ISO 3166 standard. It contains info for the following standards ISO3166-1 (countries), ISO4217 (currency) and E.164 (phone numbers).
 
-Subdivision (ISO3166-2) data have not been ported, nor currencies data (which requires the [Money RubyGem](https://github.com/RubyMoney/money)) and full translations support.
+Subdivision (ISO3166-2) data have not been ported, nor currencies data (which requires the [Money RubyGem](https://github.com/RubyMoney/money)).
 
 The data used come from [Countries JSON](https://github.com/countries/countries-data-json) files.
 
