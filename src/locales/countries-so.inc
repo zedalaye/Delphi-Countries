@@ -1,4 +1,4 @@
-RegisterTranslation('so', 'ZW', 'Simbaabwe');
+﻿RegisterTranslation('so', 'ZW', 'Simbaabwe');
 RegisterTranslation('so', 'ZM', 'Saambiya');
 RegisterTranslation('so', 'ZA', 'Koonfur Afrika');
 RegisterTranslation('so', 'YT', 'Mayotte');

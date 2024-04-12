@@ -30,6 +30,9 @@ var
 begin
   F := TFileStream.Create(FileName, fmCreate);
   try
+    var Preamble := TEncoding.UTF8.GetPreamble;
+    F.WriteBuffer(Preamble, Length(Preamble));
+
     var Data := Builder.ToString;
     var Bytes := TEncoding.UTF8.GetBytes(Data);
     F.WriteBuffer(Bytes, Length(Bytes));

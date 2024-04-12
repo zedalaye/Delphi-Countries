@@ -1,4 +1,4 @@
-RegisterTranslation('ti', 'ZW', 'ዚምባብዌ');
+﻿RegisterTranslation('ti', 'ZW', 'ዚምባብዌ');
 RegisterTranslation('ti', 'ZM', 'ዛምቢያ');
 RegisterTranslation('ti', 'ZA', 'ደቡብ ኣፍሪቃ');
 RegisterTranslation('ti', 'YT', 'Mayotte');

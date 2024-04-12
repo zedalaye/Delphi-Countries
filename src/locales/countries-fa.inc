@@ -1,4 +1,4 @@
-RegisterTranslation('fa', 'ZW', 'زیمبابوه');
+﻿RegisterTranslation('fa', 'ZW', 'زیمبابوه');
 RegisterTranslation('fa', 'ZM', 'زامبیا');
 RegisterTranslation('fa', 'ZA', 'آفریقای جنوبی');
 RegisterTranslation('fa', 'YT', 'مایوت');

@@ -1,4 +1,4 @@
-RegisterTranslation('mn', 'ZW', 'Замбибаби');
+﻿RegisterTranslation('mn', 'ZW', 'Замбибаби');
 RegisterTranslation('mn', 'ZM', 'Замби');
 RegisterTranslation('mn', 'ZA', 'Өмнөд африк');
 RegisterTranslation('mn', 'YT', 'Майотте');

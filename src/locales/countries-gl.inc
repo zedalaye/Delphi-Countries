@@ -1,4 +1,4 @@
-RegisterTranslation('gl', 'ZW', 'Zimbabue');
+﻿RegisterTranslation('gl', 'ZW', 'Zimbabue');
 RegisterTranslation('gl', 'ZM', 'Zambia');
 RegisterTranslation('gl', 'ZA', 'África do Sur');
 RegisterTranslation('gl', 'YT', 'Maiote');

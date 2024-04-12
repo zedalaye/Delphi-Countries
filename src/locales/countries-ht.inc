@@ -1,4 +1,4 @@
-RegisterTranslation('ht', 'ZW', 'Zimbabwe');
+﻿RegisterTranslation('ht', 'ZW', 'Zimbabwe');
 RegisterTranslation('ht', 'ZM', 'Zanbi');
 RegisterTranslation('ht', 'ZA', 'Afrik disid');
 RegisterTranslation('ht', 'YT', 'Mayotte');

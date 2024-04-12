@@ -1,4 +1,4 @@
-RegisterTranslation('he', 'ZW', 'זימבבואה');
+﻿RegisterTranslation('he', 'ZW', 'זימבבואה');
 RegisterTranslation('he', 'ZM', 'זמביה');
 RegisterTranslation('he', 'ZA', 'דרום אפריקה');
 RegisterTranslation('he', 'YT', 'מיוט');

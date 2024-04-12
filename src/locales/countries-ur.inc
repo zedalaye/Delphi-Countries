@@ -1,4 +1,4 @@
-RegisterTranslation('ur', 'ZW', 'زمبابوے');
+﻿RegisterTranslation('ur', 'ZW', 'زمبابوے');
 RegisterTranslation('ur', 'ZM', 'زیمبیا');
 RegisterTranslation('ur', 'ZA', 'جنوبی افریقا');
 RegisterTranslation('ur', 'YT', 'مایوٹ');

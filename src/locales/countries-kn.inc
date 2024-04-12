@@ -1,4 +1,4 @@
-RegisterTranslation('kn', 'ZW', 'ಝಿಂಬಾಬ್ವೆ');
+﻿RegisterTranslation('kn', 'ZW', 'ಝಿಂಬಾಬ್ವೆ');
 RegisterTranslation('kn', 'ZM', 'ಝಾಂಬಿಯಾ');
 RegisterTranslation('kn', 'ZA', 'ದಕ್ಷಿಣ ಆಫ್ರಿಕಾ');
 RegisterTranslation('kn', 'YT', 'Mayotte');

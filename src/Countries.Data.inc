@@ -1,4 +1,4 @@
-var C_AD := TCountry.Create;
+﻿var C_AD := TCountry.Create;
 C_AD.FAddressFormat := '';
 C_AD.FAlpha2 := 'AD';
 C_AD.FAlpha3 := 'AND';

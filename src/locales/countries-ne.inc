@@ -1,4 +1,4 @@
-RegisterTranslation('ne', 'ZW', 'जिम्बावे');
+﻿RegisterTranslation('ne', 'ZW', 'जिम्बावे');
 RegisterTranslation('ne', 'ZM', 'जाम्बिया');
 RegisterTranslation('ne', 'ZA', 'दक्षिण अफ्रिका');
 RegisterTranslation('ne', 'YT', 'मायोट्टे');

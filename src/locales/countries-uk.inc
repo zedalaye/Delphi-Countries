@@ -1,4 +1,4 @@
-RegisterTranslation('uk', 'ZW', 'Зімбабве');
+﻿RegisterTranslation('uk', 'ZW', 'Зімбабве');
 RegisterTranslation('uk', 'ZM', 'Замбія');
 RegisterTranslation('uk', 'ZA', 'Південна Африка');
 RegisterTranslation('uk', 'YT', 'Майотта');

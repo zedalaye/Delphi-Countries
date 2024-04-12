@@ -1,4 +1,4 @@
-RegisterTranslation('bn', 'ZW', 'জিম্বাবুয়ে');
+﻿RegisterTranslation('bn', 'ZW', 'জিম্বাবুয়ে');
 RegisterTranslation('bn', 'ZM', 'জাম্বিয়া');
 RegisterTranslation('bn', 'ZA', 'দক্ষিণ আফ্রিকা');
 RegisterTranslation('bn', 'YT', 'মেওতে');

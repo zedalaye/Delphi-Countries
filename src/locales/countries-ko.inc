@@ -1,4 +1,4 @@
-RegisterTranslation('ko', 'ZW', '짐바브웨');
+﻿RegisterTranslation('ko', 'ZW', '짐바브웨');
 RegisterTranslation('ko', 'ZM', '잠비아');
 RegisterTranslation('ko', 'ZA', '남아프리카 공화국');
 RegisterTranslation('ko', 'YT', '마요트');

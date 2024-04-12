@@ -1,4 +1,4 @@
-RegisterTranslation('sr', 'ZW', 'Зимбабве');
+﻿RegisterTranslation('sr', 'ZW', 'Зимбабве');
 RegisterTranslation('sr', 'ZM', 'Замбија');
 RegisterTranslation('sr', 'ZA', 'Јужна Африка');
 RegisterTranslation('sr', 'YT', 'Мајот');

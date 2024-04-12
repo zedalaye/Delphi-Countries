@@ -1,4 +1,4 @@
-RegisterTranslation('km', 'ZW', 'ហ្ស៊ីមបាវ៉េ');
+﻿RegisterTranslation('km', 'ZW', 'ហ្ស៊ីមបាវ៉េ');
 RegisterTranslation('km', 'ZM', 'ហ្សាំប៊ី');
 RegisterTranslation('km', 'ZA', 'អាហ្វ្រិក​ខាងត្បូង');
 RegisterTranslation('km', 'YT', 'ម៉ាយុត');

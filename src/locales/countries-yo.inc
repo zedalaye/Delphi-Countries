@@ -1,4 +1,4 @@
-RegisterTranslation('yo', 'ZW', 'Sìmbábúè');
+﻿RegisterTranslation('yo', 'ZW', 'Sìmbábúè');
 RegisterTranslation('yo', 'ZM', 'Sámbíà');
 RegisterTranslation('yo', 'ZA', 'Gúúsù Áfríkà');
 RegisterTranslation('yo', 'YT', 'Mayotte');

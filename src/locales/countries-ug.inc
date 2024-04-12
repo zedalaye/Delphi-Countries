@@ -1,4 +1,4 @@
-RegisterTranslation('ug', 'ZW', 'زىمبابۋې');
+﻿RegisterTranslation('ug', 'ZW', 'زىمبابۋې');
 RegisterTranslation('ug', 'ZM', 'زامبىيە');
 RegisterTranslation('ug', 'ZA', 'جەنۇبىي ئافرىقا');
 RegisterTranslation('ug', 'YT', 'مايوتتې');

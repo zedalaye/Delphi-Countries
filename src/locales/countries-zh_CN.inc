@@ -1,4 +1,4 @@
-RegisterTranslation('zh_CN', 'ZW', '津巴布韦');
+﻿RegisterTranslation('zh_CN', 'ZW', '津巴布韦');
 RegisterTranslation('zh_CN', 'ZM', '赞比亚');
 RegisterTranslation('zh_CN', 'ZA', '南非');
 RegisterTranslation('zh_CN', 'YT', '马约特');

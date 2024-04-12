@@ -1,4 +1,4 @@
-RegisterTranslation('or', 'ZW', 'ଜିମ୍ବାଓ୍ବେ');
+﻿RegisterTranslation('or', 'ZW', 'ଜିମ୍ବାଓ୍ବେ');
 RegisterTranslation('or', 'ZM', 'ଜାମ୍ବିୟା');
 RegisterTranslation('or', 'ZA', 'ଦକ୍ଷିଣ ଆଫ୍ରିକା');
 RegisterTranslation('or', 'YT', 'ମେୟୋଟ');

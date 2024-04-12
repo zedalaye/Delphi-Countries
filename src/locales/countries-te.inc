@@ -1,4 +1,4 @@
-RegisterTranslation('te', 'ZW', 'జింబాంబ్వే');
+﻿RegisterTranslation('te', 'ZW', 'జింబాంబ్వే');
 RegisterTranslation('te', 'ZM', 'జాంబియా');
 RegisterTranslation('te', 'ZA', 'సౌత్ ఆఫ్రికా');
 RegisterTranslation('te', 'YT', 'మాయోటె');

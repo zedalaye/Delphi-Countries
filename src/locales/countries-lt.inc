@@ -1,4 +1,4 @@
-RegisterTranslation('lt', 'ZW', 'Zimbabvė');
+﻿RegisterTranslation('lt', 'ZW', 'Zimbabvė');
 RegisterTranslation('lt', 'ZM', 'Zambija');
 RegisterTranslation('lt', 'ZA', 'Pietų Afrika');
 RegisterTranslation('lt', 'YT', 'Majotas');

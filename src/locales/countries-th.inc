@@ -1,4 +1,4 @@
-RegisterTranslation('th', 'ZW', 'ซิมบับเว');
+﻿RegisterTranslation('th', 'ZW', 'ซิมบับเว');
 RegisterTranslation('th', 'ZM', 'แซมเบีย');
 RegisterTranslation('th', 'ZA', 'แอฟริกาใต้');
 RegisterTranslation('th', 'YT', 'มายอต');

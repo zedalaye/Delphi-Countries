@@ -1,4 +1,4 @@
-RegisterTranslation('gv', 'ZW', 'Yn Çhimbabwe');
+﻿RegisterTranslation('gv', 'ZW', 'Yn Çhimbabwe');
 RegisterTranslation('gv', 'ZM', 'Yn Tambia');
 RegisterTranslation('gv', 'ZA', 'Yn Affrick Yiass');
 RegisterTranslation('gv', 'YT', 'Mayotte');

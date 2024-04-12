@@ -1,4 +1,4 @@
-RegisterTranslation('ja', 'ZW', 'ジンバブエ');
+﻿RegisterTranslation('ja', 'ZW', 'ジンバブエ');
 RegisterTranslation('ja', 'ZM', 'ザンビア');
 RegisterTranslation('ja', 'ZA', '南アフリカ');
 RegisterTranslation('ja', 'YT', 'マヨット');

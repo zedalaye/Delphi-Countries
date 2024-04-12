@@ -1,4 +1,4 @@
-RegisterTranslation('el', 'ZW', 'Ζιμπάμπουε');
+﻿RegisterTranslation('el', 'ZW', 'Ζιμπάμπουε');
 RegisterTranslation('el', 'ZM', 'Ζάμπια');
 RegisterTranslation('el', 'ZA', 'Νότια Αφρική');
 RegisterTranslation('el', 'YT', 'Μαγιότ');

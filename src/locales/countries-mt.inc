@@ -1,4 +1,4 @@
-RegisterTranslation('mt', 'ZW', 'Żimbabwe');
+﻿RegisterTranslation('mt', 'ZW', 'Żimbabwe');
 RegisterTranslation('mt', 'ZM', 'Żambja');
 RegisterTranslation('mt', 'ZA', 'Afrika t''Isfel');
 RegisterTranslation('mt', 'YT', 'Majotte');

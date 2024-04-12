@@ -1,4 +1,4 @@
-RegisterTranslation('ml', 'ZW', 'സിംബാബ്‌വേ');
+﻿RegisterTranslation('ml', 'ZW', 'സിംബാബ്‌വേ');
 RegisterTranslation('ml', 'ZM', 'സാംബിയ');
 RegisterTranslation('ml', 'ZA', 'സൌത്ത് ആഫ്രിക്ക');
 RegisterTranslation('ml', 'YT', 'മയോട്ടെ');

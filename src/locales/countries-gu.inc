@@ -1,4 +1,4 @@
-RegisterTranslation('gu', 'ZW', 'ઝીમ્બાબવે');
+﻿RegisterTranslation('gu', 'ZW', 'ઝીમ્બાબવે');
 RegisterTranslation('gu', 'ZM', 'ઝાંબિયા');
 RegisterTranslation('gu', 'ZA', 'દક્ષિણ આફ્રિકા');
 RegisterTranslation('gu', 'YT', 'માયોટે');

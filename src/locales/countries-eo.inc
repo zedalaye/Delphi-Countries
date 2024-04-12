@@ -1,4 +1,4 @@
-RegisterTranslation('eo', 'ZW', 'Zimbabvo');
+﻿RegisterTranslation('eo', 'ZW', 'Zimbabvo');
 RegisterTranslation('eo', 'ZM', 'Zambio');
 RegisterTranslation('eo', 'ZA', 'Sud-Afriko');
 RegisterTranslation('eo', 'YT', 'Majoto');

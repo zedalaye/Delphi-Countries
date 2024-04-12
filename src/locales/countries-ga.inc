@@ -1,4 +1,4 @@
-RegisterTranslation('ga', 'ZW', 'An tSiombáib');
+﻿RegisterTranslation('ga', 'ZW', 'An tSiombáib');
 RegisterTranslation('ga', 'ZM', 'An tSaimbia');
 RegisterTranslation('ga', 'ZA', 'An Afraic Theas');
 RegisterTranslation('ga', 'YT', 'Mayotte');

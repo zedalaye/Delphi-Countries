@@ -1,4 +1,4 @@
-RegisterTranslation('my', 'ZW', 'ဇင်ဘာဘွေနိုင်ငံ');
+﻿RegisterTranslation('my', 'ZW', 'ဇင်ဘာဘွေနိုင်ငံ');
 RegisterTranslation('my', 'ZM', 'ဇမ်ဘီယာနိုင်ငံ');
 RegisterTranslation('my', 'ZA', 'တောင်အာဖရိကနိုင်ငံ');
 RegisterTranslation('my', 'YT', 'Mayotte');

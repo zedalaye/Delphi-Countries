@@ -1,4 +1,4 @@
-RegisterTranslation('am', 'ZW', 'ፒሤቢ።');
+﻿RegisterTranslation('am', 'ZW', 'ፒሤቢ።');
 RegisterTranslation('am', 'ZM', 'ዛምቢያ');
 RegisterTranslation('am', 'ZA', '፠ቡብ ጐፔሱጢ');
 RegisterTranslation('am', 'YT', 'Mayotte');

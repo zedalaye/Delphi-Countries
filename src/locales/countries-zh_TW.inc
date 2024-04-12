@@ -1,4 +1,4 @@
-RegisterTranslation('zh_TW', 'ZW', '辛巴威');
+﻿RegisterTranslation('zh_TW', 'ZW', '辛巴威');
 RegisterTranslation('zh_TW', 'ZM', '尚比亞');
 RegisterTranslation('zh_TW', 'ZA', '南非');
 RegisterTranslation('zh_TW', 'YT', '馬約特');

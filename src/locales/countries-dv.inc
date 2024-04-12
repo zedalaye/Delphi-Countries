@@ -1,4 +1,4 @@
-RegisterTranslation('dv', 'ZW', 'ޒިމްބާބުވޭ');
+﻿RegisterTranslation('dv', 'ZW', 'ޒިމްބާބުވޭ');
 RegisterTranslation('dv', 'ZM', 'ޒެމްބިއާ');
 RegisterTranslation('dv', 'ZA', 'ދެކުނު އެފްރިކާ');
 RegisterTranslation('dv', 'YT', 'Mayotte');

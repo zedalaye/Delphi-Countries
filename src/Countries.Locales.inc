@@ -1,4 +1,4 @@
-// Activate or deactivate languages as needed
+﻿// Activate or deactivate languages as needed
 // Ensure that the default language defined in Countries.Translations.inc is active.
 
 // Shortcut: Activate this one to embed all available translations. May be set project wise in your .dproj

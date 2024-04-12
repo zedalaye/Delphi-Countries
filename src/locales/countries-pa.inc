@@ -1,4 +1,4 @@
-RegisterTranslation('pa', 'ZW', 'ਜਿੰਬਾਬਾਵੇ');
+﻿RegisterTranslation('pa', 'ZW', 'ਜਿੰਬਾਬਾਵੇ');
 RegisterTranslation('pa', 'ZM', 'ਜ਼ੈਬੀਆ');
 RegisterTranslation('pa', 'ZA', 'ਦੱਖਣੀ ਅਫਰੀਕਾ');
 RegisterTranslation('pa', 'YT', 'ਮਾਈਟੀ');

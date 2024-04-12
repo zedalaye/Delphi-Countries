@@ -1,4 +1,4 @@
-RegisterTranslation('dz', 'ZW', 'ཛིམ་བབ་ཝི།');
+﻿RegisterTranslation('dz', 'ZW', 'ཛིམ་བབ་ཝི།');
 RegisterTranslation('dz', 'ZM', 'ཛམ་བི་ཡ།');
 RegisterTranslation('dz', 'ZA', 'ལྷོ་ཨཕ་རི་ཀ');
 RegisterTranslation('dz', 'YT', 'མ་ཡོ་ཊི།');

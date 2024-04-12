@@ -1,4 +1,4 @@
-// TCountries.DefaultLanguage property defines how TCountry.CommonName behaves
+﻿// TCountries.DefaultLanguage property defines how TCountry.CommonName behaves
 TCountries.DefaultLocale := 'fr';
 
 // You may not need to change anything below this line

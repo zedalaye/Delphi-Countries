@@ -1,4 +1,4 @@
-RegisterTranslation('pi', 'ZW', 'जिम्बाबवे');
+﻿RegisterTranslation('pi', 'ZW', 'जिम्बाबवे');
 RegisterTranslation('pi', 'ZM', 'जाम्बिया');
 RegisterTranslation('pi', 'ZA', 'दक्षिण-अफ्रीका');
 RegisterTranslation('pi', 'YT', 'Mayotte');

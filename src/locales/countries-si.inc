@@ -1,4 +1,4 @@
-RegisterTranslation('si', 'ZW', 'සිම්බාබ්වේ');
+﻿RegisterTranslation('si', 'ZW', 'සිම්බාබ්වේ');
 RegisterTranslation('si', 'ZM', 'සැම්බියාව');
 RegisterTranslation('si', 'ZA', 'දකුණු අප්‍රිකාව');
 RegisterTranslation('si', 'YT', 'මයොට්ටේ');

@@ -1,4 +1,4 @@
-RegisterTranslation('hi', 'ZW', 'ज़िम्बाब्वे');
+﻿RegisterTranslation('hi', 'ZW', 'ज़िम्बाब्वे');
 RegisterTranslation('hi', 'ZM', 'ज़ाम्बिया');
 RegisterTranslation('hi', 'ZA', 'दक्षिण अफ़्रीका');
 RegisterTranslation('hi', 'YT', 'मेयोट');

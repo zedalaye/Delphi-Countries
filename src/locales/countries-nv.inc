@@ -1,4 +1,4 @@
-RegisterTranslation('nv', 'ZW', 'Hooghan Tsé Bee Ádaalyaaí Bikéyah');
+﻿RegisterTranslation('nv', 'ZW', 'Hooghan Tsé Bee Ádaalyaaí Bikéyah');
 RegisterTranslation('nv', 'ZM', 'Zambia');
 RegisterTranslation('nv', 'ZA', 'Kéyah Naakaii Łizhinii Bikéyah Shádiʼááhjí Siʼánígíí');
 RegisterTranslation('nv', 'YT', 'Mayotte');

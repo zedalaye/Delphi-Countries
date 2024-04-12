@@ -1,4 +1,4 @@
-RegisterTranslation('is', 'ZW', 'Simbabve');
+﻿RegisterTranslation('is', 'ZW', 'Simbabve');
 RegisterTranslation('is', 'ZM', 'Sambía');
 RegisterTranslation('is', 'ZA', 'Suður-Afríka');
 RegisterTranslation('is', 'YT', 'Mayott');

@@ -1,4 +1,4 @@
-RegisterTranslation('ta', 'ZW', 'ஜிம்பாப்வே');
+﻿RegisterTranslation('ta', 'ZW', 'ஜிம்பாப்வே');
 RegisterTranslation('ta', 'ZM', 'சாம்பியா');
 RegisterTranslation('ta', 'ZA', 'தென் ஆப்ரிக்கா');
 RegisterTranslation('ta', 'YT', 'மயோதி');

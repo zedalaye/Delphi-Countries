@@ -1,4 +1,4 @@
-RegisterTranslation('vi', 'ZW', 'Xim-ba-bu-ê');
+﻿RegisterTranslation('vi', 'ZW', 'Xim-ba-bu-ê');
 RegisterTranslation('vi', 'ZM', 'Xam-bi-a');
 RegisterTranslation('vi', 'ZA', 'Nam Phi');
 RegisterTranslation('vi', 'YT', 'May-o-thợ');

@@ -1,4 +1,4 @@
-RegisterTranslation('wa', 'ZW', 'Zimbabwè');
+﻿RegisterTranslation('wa', 'ZW', 'Zimbabwè');
 RegisterTranslation('wa', 'ZM', 'Zambeye');
 RegisterTranslation('wa', 'ZA', 'Nonne Afrike');
 RegisterTranslation('wa', 'YT', 'Mayote');
