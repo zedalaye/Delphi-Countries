@@ -1,0 +1,3 @@
+[submodule "countries-data-json"]
+	path = countries-data-json
+	url = https://github.com/countries/countries-data-json

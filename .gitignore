@@ -1,0 +1,6 @@
+__history
+__recovery
+*.local
+*.identcache
+*.bak
+Win32
