@@ -49,7 +49,7 @@ RegisterTranslation('pt_BR', 'SK', 'Eslováquia');
 RegisterTranslation('pt_BR', 'SJ', 'Svalbard e a Ilha de Jan Mayen');
 RegisterTranslation('pt_BR', 'SI', 'Eslovênia');
 RegisterTranslation('pt_BR', 'SH', 'Santa Helena, Ascensão e Tristão da Cunha');
-RegisterTranslation('pt_BR', 'SG', 'Cingapura');
+RegisterTranslation('pt_BR', 'SG', 'Singapura');
 RegisterTranslation('pt_BR', 'SE', 'Suécia');
 RegisterTranslation('pt_BR', 'SD', 'Sudão');
 RegisterTranslation('pt_BR', 'SC', 'Seychelles');

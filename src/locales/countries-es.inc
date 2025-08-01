@@ -185,7 +185,7 @@ RegisterTranslation('es', 'EH', 'Sahara Occidental');
 RegisterTranslation('es', 'EG', 'Egipto');
 RegisterTranslation('es', 'EE', 'Estonia');
 RegisterTranslation('es', 'EC', 'Ecuador');
-RegisterTranslation('es', 'DZ', 'Algeria');
+RegisterTranslation('es', 'DZ', 'Argelia');
 RegisterTranslation('es', 'DO', 'República Dominicana');
 RegisterTranslation('es', 'DM', 'Dominica');
 RegisterTranslation('es', 'DK', 'Dinamarca');

@@ -198,6 +198,7 @@ RegisterTranslation('fr', 'CW', 'Curaçao');
 RegisterTranslation('fr', 'CV', 'Cap-Vert');
 RegisterTranslation('fr', 'CU', 'Cuba');
 RegisterTranslation('fr', 'CR', 'Costa Rica');
+RegisterTranslation('fr', 'CP', 'Clipperton');
 RegisterTranslation('fr', 'CO', 'Colombie');
 RegisterTranslation('fr', 'CN', 'Chine');
 RegisterTranslation('fr', 'CM', 'Cameroun');
