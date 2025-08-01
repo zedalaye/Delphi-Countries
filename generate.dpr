@@ -184,10 +184,19 @@ procedure ProcessCountry(Builder: TStringBuilder; const Code: string;
   end;
 
   procedure AppendArray(const VarName, PropName: string; const Arr: ISuperObject);
+  var
+    L: Integer;
   begin
-    Assert(ObjectIsType(Arr, stArray));
-    Builder.Append('SetLength(').Append(VarName).Append('.').AppendFormat('F%s', [PropName]).Append(', ').Append(Arr.AsArray.Length).AppendLine(');');
-    for var I := 0 to Arr.AsArray.Length -1 do
+    if ObjectIsNull(Arr) then
+      L := 0
+    else
+    begin
+      Assert(ObjectIsType(Arr, stArray));
+      L := Arr.AsArray.Length;
+    end;
+
+    Builder.Append('SetLength(').Append(VarName).Append('.').AppendFormat('F%s', [PropName]).Append(', ').Append(L).AppendLine(');');
+    for var I := 0 to L -1 do
       case ObjectGetType(Arr.AsArray[I]) of
         stString:   Append(VarName, Format('%s[%d]', [PropName, I]), Arr.AsArray[I].AsString);
         stInt:      Append(VarName, Format('%s[%d]', [PropName, I]), Arr.AsArray[I].AsInteger);
@@ -444,6 +453,9 @@ begin
     ReadLn;
   except
     on E: Exception do
+    begin
       Writeln(E.ClassName, ': ', E.Message);
+      ReadLn;
+    end;
   end;
 end.
