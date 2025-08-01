@@ -402,6 +402,8 @@ var
 
 begin
   try
+    FormatSettings.DecimalSeparator := '.';
+
     if not DirectoryExists(COUNTRIES_ROOT) then
     begin
       WriteLn('countries data is missing');
