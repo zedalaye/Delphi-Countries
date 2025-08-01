@@ -10,7 +10,7 @@ uses
   System.Generics.Collections,
   System.IOUtils,
   superobject,
-  Countries in 'src\Countries.pas';
+  Countries.Types in 'src\Countries.Types.pas';
 
 const
   DATA_ROOT = '..\..\countries-data-json\data';
